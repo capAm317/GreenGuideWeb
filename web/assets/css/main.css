@@ -1,0 +1,335 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Onassis - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+@font-face {
+    font-family: Montserrat-R;
+    src: url(font/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: Montserrat-B;
+    src: url(font/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: Montserrat-L;
+    src: url(font/Montserrat-Light.otf);
+}
+
+html{
+    /*text-transform: uppercase; !important;*/
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Montserrat-R, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.justified{
+    text-align: justify;
+}
+
+.regular{
+    font-family: Montserrat-R, sans-serif;
+}
+
+.semi-bold{
+    font-family: Montserrat-B, sans-serif;
+}
+
+.light{
+    font-family: Montserrat-L, sans-serif;
+}
+
+.no-lh{
+    line-height: 1.2em;
+}
+
+.white-text{
+    color: #fff !important;
+}
+
+.green-forest-text{
+    color: #015249;
+}
+
+.marine-text{
+    color: #57bc90;
+}
+
+.marine-green-bg{
+    background-color: #57bc90;
+}
+
+.row{
+    padding: 0px;
+    margin: 0px;
+}
+
+.margin-25-wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-para-custom{
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+/* Navbar */
+.navbar-custom{
+    background-color: #025249;
+    color: #fff !important;
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.nav-btn{
+    /*text-transform: uppercase;*/
+    font-style: Montserrat-L, sans-serif;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    font-size: 1em;
+    padding: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav-item{
+    margin-top: 7px;
+    font-size: .9em;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.header-img{
+    margin-top: 7px;
+    max-height: 20px;
+}
+
+
+/*MASONRY*/
+
+#masonry{
+    /*margin-bottom: 30px;*/
+}
+
+.masonry-item{
+    padding: 0px;
+    margin: 0px;
+}
+
+.masonry-item > img{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*WHITE*/
+
+#white{
+    margin-top: 30px;
+    color: #01524B !important;
+    margin-bottom: 50px;
+}
+
+/*FOOTER*/
+
+#footer{
+    color: #fff;
+    background-color: #025249;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social-button{
+    color: #025249;
+    background-color: white;
+}
+
+.social-button:focus{
+    outline-color: transparent;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+/*HEADER*/
+
+#header {
+    background: url(../img/header-bg.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top:20px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*TABLE*/
+.th-custom{
+    border-bottom: 2px solid #afc3c3 !important;
+}
+
+.td-custom, .td-custom-no-hover{
+    border-top: 2px solid #afc3c3 !important;
+    border-bottom: 2px solid #afc3c3 !important;
+}
+
+.th-custom-2{
+    border-width: 0px !important;
+    padding: 0px !important;
+}
+
+.td-custom-2{
+    border-width: 0px !important;
+}
+
+.td-custom:hover{
+    background-color: #ddf2e9 !important;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+.tr-hover:hover{
+    background-color: #ddf2e9 !important;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+.td-push{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.table-custom{
+    margin-bottom: 10px;
+}
+
+/*LPEP*/
+.lpep-left{
+    border-right: 2px solid #afc3c3 !important;
+}
+
+.lpep-right{
+    border-left: 2px solid #afc3c3 !important;
+}
