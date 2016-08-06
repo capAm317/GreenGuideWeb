@@ -333,3 +333,8 @@ hr {
 .lpep-right{
     border-left: 2px solid #afc3c3 !important;
 }
+
+/*USG*/
+.officer-name{
+    font-size: 1.3em;
+}
