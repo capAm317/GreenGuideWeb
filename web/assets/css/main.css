@@ -50,32 +50,6 @@ p {
 }
 
 /* Links */
-a {
-    color: #f85c37;
-    word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
-a:hover,
-a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
-
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
 
 hr {
     display: block;
@@ -84,6 +58,17 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+a{
+
+}
+
+.letter-space{
+    letter-spacing: 2px;
 }
 
 .no-padding{
@@ -119,7 +104,7 @@ hr {
 }
 
 .green-forest-text{
-    color: #015249;
+    color: #015249 !important;
 }
 
 .marine-text{
@@ -299,6 +284,7 @@ hr {
 }
 
 .td-custom:hover{
+    cursor: default;
     background-color: #ddf2e9 !important;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -337,4 +323,34 @@ hr {
 /*USG*/
 .officer-name{
     font-size: 1.3em;
+}
+
+/*CHEER*/
+.cheer-list{
+    font-size: 1.5em !important;
+}
+.cheer-list:hover, .a-list:hover{
+    color: #41d696 !important;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;s
+}
+.margin-1{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.margin-3{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.cheer-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*ADMIN OFFICES*/
+.margin-bottom-15{
+    margin-bottom: 15px;
 }
