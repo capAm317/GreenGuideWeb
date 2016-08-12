@@ -324,7 +324,17 @@ a{
 .officer-name{
     font-size: 1.3em;
 }
-
+.btn-para-custom-2{
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 0px;
+}
+.service-p{
+    margin-bottom: 10px;
+}
 /*CHEER*/
 .cheer-list{
     font-size: 1.5em !important;
@@ -353,4 +363,10 @@ a{
 /*ADMIN OFFICES*/
 .margin-bottom-15{
     margin-bottom: 15px;
+}
+
+/*WHERE TO EAT*/
+.wte-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
