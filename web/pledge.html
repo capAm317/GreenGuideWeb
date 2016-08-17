@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   
-  	<head>
-	  	<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="description" content="">
-	    <meta name="author" content="">
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    	<title>Archer's Guide</title>
+    <title>Archer's Guide</title>
 
-  		<!-- Bootstrap core CSS -->
-    	<link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    	<!-- Custom styles for this template -->
-    	<link href="assets/css/main.css" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
+  	<!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
  
 
-    	<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/Chart.js"></script>
-		<script src="assets/js/custom.js"></script>
-  	</head>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/custom.js"></script>
+  </head>
  
-  	<body>
+  <body>
  		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-custom" role="navigation">
+		<nav class="navbar navbar-default navbar-custom">
 		  <div class="navbar-header">
 		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
-	      </button>
-	       	<a class="navbar-brand pull-left" href="#"><img class="img-responsive header-img" src="assets/img/white-header-logo.png"></a>    
+	      	</button>
+	       	<a class="navbar-brand pull-left" href="index.html"><img class="img-responsive header-img" src="assets/img/white-header-logo.png"></a>    
 		  </div>
-		  <div class="">
+		  <div class="collapse navbar-collapse">
 		    <ul class="nav navbar-nav">
-		    	<li><a href="#about" class="smoothScroll white-text nav-item">LPEP</a></li>
-		    	<li><a href="#about" class="smoothScroll white-text nav-item">Hymn & Cheers</a></li>
-		        <li><a href="#about" class="smoothScroll white-text nav-item">Values & Prayers</a></li>
-		        <li><a href="#about" class="smoothScroll white-text nav-item">Offices</a></li>
-		      	<li><a href="#about" class="smoothScroll white-text nav-item">Dress Code</a></li>
-		        <li><a href="#about" class="smoothScroll white-text nav-item">Places</a></li>
-		        <li><a href="#about" class="smoothScroll white-text nav-item">Campus Services</a></li>
-		        <li><a href="#about" class="smoothScroll white-text nav-item">LSPO</a></li>
+		    	<li><a href="lpep.html" class="white-text nav-item">LPEP</a></li>
+		    	<li><a href="cheer.html" class="white-text nav-item">Hymn & Cheers</a></li>
+		        <li><a href="values.html" class="white-text nav-item">Values & Prayers</a></li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offices <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="adminoffices.html" class="nav-menu-item">Admin Offices</a></li>
+						<li><a href="usg.html" class="nav-menu-item">USG</a></li>
+                	</ul>
+		        </li>
+		      	<li><a href="#about" class="white-text nav-item">Dress Code</a></li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Campus Services <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="parking.html" class="nav-menu-item">Parking</a></li>
+						<li><a href="places-to-eat.html" class="nav-menu-item">Places to Eat</a></li>
+						<li><a href="hotspot.html" class="nav-menu-item">WiFi Hotspot</a></li>
+						<li><a href="arrowexpress.html" class="nav-menu-item">Arrow Express</a></li>
+						<li><a href="supplies.html" class="nav-menu-item">Supplies</a></li>
+						<li><a href="printing.html" class="nav-menu-item">Printing</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="usgprojects.html" class="nav-menu-item">USG Projects</a></li>
+						<li><a href="usgservices.html" class="nav-menu-item">USG Services</a></li>
+                	</ul>
+		        </li>
+		        <li><a href="#about" class="white-text nav-item">LSPO</a></li>
 		    </ul>
-		    <a class="navbar-brand pull-right" href="#"><button class = "btn nav-btn">Login</button></a>
 		  </div>
 		</nav>
-
 		<!-- ========== HEADER SECTION ========== -->
 
 		<section id="header">
-			<div class = "container-fluid">
-				<div class = "row xd">
-					<h2>PLEDGE</h2>
+			<div class = "container-fluid  bottom-align">
+				<div class = "row col-lg-8 col-md-8 col-sm-10 col-xs-12">
+					<div class = "text-header white-text semi-bold letter-space">
+						La Sallian Pledge
+					</div>
+				</div>
+				<div class = "row col-lg-8 col-md-8 col-sm-10 col-xs-12">
+					<div class="white-text regular letter-space tip-header"><b>TIP #10</b>: You don't always have to buy a new book, you can borrow from the Library or avail the Pahiram libro service of the USG.</div>
 				</div>
 			</div>
 		</section>
@@ -66,15 +87,15 @@
 		<section id="white">
 			<div class="container-fluid">
 				<div class="row">
-					<center><h1 class="green-forest-text semi-bold">The La Sallian Pledge</h1></center>
+					<center><h1 class="green-forest-text semi-bold letter-space">The La Sallian Pledge</h1></center>
 					<center><img class="img-responsive" src="assets/img/stars.png"/></center>
 				</div>
 				<div class="row">
 				</div>
 				<div class="row margin-25-wrapper">
 					<div class="col-lg-4 col-lg-offset-4">
-						<p class="text-center"
-							>I am Lasallian. I will come to appreciate the history and pride of the Lasallian Family to which I now belong as a student of De La Salle University.
+						<p class="text-center">
+							I am Lasallian. I will come to appreciate the history and pride of the Lasallian Family to which I now belong as a student of De La Salle University.
 						</p>
 						<p class="text-center">
 							I recognize in faith that my life and my abilities are the gifts of good and gracious God with the guidance of the Almighty, and the inspiration of our Founder. St. John Baptist de La Salle, I will take progressive responsibility for own learning and development so that I may become the kind of person God intends me to be.
