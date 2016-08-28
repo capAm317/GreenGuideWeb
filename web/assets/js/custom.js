@@ -36,3 +36,14 @@ function scrollToTop() {
     offsetTop = offset.top;
     $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }
+// $(document).ready(function() {
+//    $(".carousel").swiperight(function() {
+//       $(this).carousel('prev');
+//     });
+//    $(".carousel").swipeleft(function() {
+//       $(this).carousel('next');
+//    });
+// });
+
+
+

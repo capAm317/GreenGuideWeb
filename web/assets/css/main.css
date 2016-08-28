@@ -11,6 +11,8 @@
     src: url(font/Montserrat-Light.otf);
 }
 
+html, body {margin:0;padding:0;height:100%;}
+
 html{
     /*text-transform: uppercase; !important;*/
 }
@@ -51,32 +53,25 @@ hr {
     padding: 0;
 }
 
+a{
+    cursor: h;
+}
+
 a:hover{
     text-decoration: none;
 }
 
-.bottom-align {
-    position: relative;
-    top: 280px;
-    left: 0px;
-    text-align: left;
-    margin-left: 3em;
-}
 
-.text-header{
-    font-size: 5em;
-}
-.tip-header{
-    font-size: 1em;
-    margin-left: .5em;
-    padding-bottom: 10px;
-}
 .semi-black-bg{
-        background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.2);
 }
 
 .letter-space{
     letter-spacing: 2px;
+}
+
+.letter-space-half{
+    letter-spacing: 1px;
 }
 
 .no-padding{
@@ -129,8 +124,8 @@ a:hover{
 }
 
 .margin-25-wrapper{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .btn-para-custom{
@@ -141,10 +136,9 @@ a:hover{
     padding-right: 35px;
 }
 
-
 /* Navbar */
 .navbar-custom{
-    background-color: #025249;
+    background-color: #046a38;
     color: #fff !important;
     border: 0px;
     border-radius: 0px;
@@ -157,7 +151,6 @@ a:hover{
 }
 
 .nav-btn{
-    /*text-transform: uppercase;*/
     font-style: Montserrat-L, sans-serif;
     background-color: transparent;
     border-color: #fff;
@@ -176,17 +169,40 @@ a:hover{
   text-align: center;
 }
 
+.nav-item{
+    background-color: transparent !important;
+}
+
+.nav-item:hover, .nav-item:focus, .nav-item:active{
+    background-color: transparent !important;
+    color:#57bc90 !important;
+    -webkit-transition: all 0.3s ease-in, background 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in, background 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in, background 0.3s ease-in;
+    -o-transition: all 0.3s ease-in, background 0.3s ease-in;
+    transition: all 0.3s ease-in, background 0.3s ease-in;s
+}
+
+.nav-menu-item{
+    color: #015249 !important;
+}
+
+.nav-menu-item:hover{
+    background-color: #57bc90 !important; 
+    color: #fff !important;
+    -webkit-transition: all 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: all 0.1s ease-in, background 0.1s ease-in;
+    transition: all 0.1s ease-in, background 0.1s ease-in;s
+}
+
 .header-img{
     margin-top: 5px;
     max-height: 20px;
 }
 
-
 /*MASONRY*/
-
-#masonry{
-    /*margin-bottom: 30px;*/
-}
 
 .masonry-item{
     padding: 0px;
@@ -210,9 +226,16 @@ a:hover{
 
 #footer{
     color: #fff;
-    background-color: #025249;
+    background-color: #046a38;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+#footer-2{
+    color: #fff;
+    background-color: #046a38;
+    padding-top: 20px;
+    padding-bottom: 20px;    
 }
 
 .social-button{
@@ -243,6 +266,28 @@ a:hover{
   border-radius: 25px;
 }
 
+.bottom-list{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.bottom-align {
+    position: relative;
+    top: 165px;
+    left: 0px;
+    text-align: left;
+    margin-left: 3em;
+}
+
+.footer-link{
+    color: rgb(120, 179, 131) !important;
+}
+
+.footer-link:hover{
+    color: rgb(120, 179, 131) !important;
+    text-decoration: underline;
+}
+
 /*HEADER*/
 
 #header {
@@ -252,7 +297,7 @@ a:hover{
     text-align:center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 490px;
+    min-height: 360px;
     width: 100%;
     
     -webkit-background-size: 100%;
@@ -266,10 +311,58 @@ a:hover{
     background-size: cover;
 }
 
+#header-2{
+    background: url(../img/dlsu-ls.png) no-repeat center top;
+    margin-top: -10px;
+    /*padding-top: 20px;*/
+    text-align:center;
+    /*background-attachment: relative;*/
+    background-position: center center;
+    width: 100%;
+    min-height: 80%;    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-2-overlay{
+    /*background-color: rgba(4,106,56,0.45);*/
+}
+
+.header-2-container{
+    height: 80%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.no-padding-left{
+    padding-left: 0px !important;
+}
+
+.header-2-text-margin{
+    margin-top: 10px;
+}
+
 .bottom-align-text {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.text-header{
+    font-size: 5em;
+}
+
+.tip-header{
+    font-size: 1em;
+    margin-left: .5em;
+    padding-bottom: 10px;
 }
 
 /*TABLE*/
@@ -328,9 +421,30 @@ a:hover{
     border-left: 2px solid #afc3c3 !important;
 }
 
+.product-tab:hover{
+    text-decoration: underline;
+    color: #57bc90 !important;
+}
+.nav-tabs > li > a{
+
+    /*background-color: transparent !important;*/
+    color: #57bc90 !important;
+}
+.nav-tabs > li > a:hover{
+
+}
+
+.active > a{
+    background-color: #EEE !important;
+}
+
 /*USG*/
 .officer-name{
     font-size: 1.3em;
+    margin-bottom: 0px !important;
+}
+.officer-title{
+    font-size: .75em;
 }
 .btn-para-custom-2{
     text-transform: uppercase;
@@ -379,36 +493,14 @@ a:hover{
     margin-bottom: 20px;
 }
 
-.nav-item{
-    background-color: transparent !important;
+.handbook{
+    color: #57bc90;
 }
 
-.nav-item:hover, .nav-item:focus, .nav-item:active{
-    background-color: transparent !important;
-    /*text-decoration: underline !important;*/
-    color:#57bc90 !important;
-    -webkit-transition: all 0.3s ease-in, background 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in, background 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in, background 0.3s ease-in;
-    -o-transition: all 0.3s ease-in, background 0.3s ease-in;
-    transition: all 0.3s ease-in, background 0.3s ease-in;s
+.handbook:hover{
+    color: #57bc90 !important;
+    text-decoration: underline;
 }
-
-
-.nav-menu-item{
-    color: #015249 !important;
-}
-
-.nav-menu-item:hover{
-    background-color: #57bc90 !important; 
-    color: #fff !important;
-    -webkit-transition: all 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: all 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: all 0.1s ease-in, background 0.1s ease-in;
-    transition: all 0.1s ease-in, background 0.1s ease-in;s
-}
-
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -422,32 +514,36 @@ a:hover{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .lpep-left{
+        border-right: 0px solid #afc3c3 !important;
+    }
 
-.nav-menu-item{
-    color: #fff !important;   
-    background-color: #015249 !important;
-}
+    .lpep-right{
+        border-left: 0px solid #afc3c3 !important;
+    }
+    .nav-menu-item{
+        color: #fff !important;   
+        background-color: #015249 !important;
+    }
 
+    .nav-menu-item{
+        text-align: center;   
+    }
 
+    .nav-menu-item:hover{
+        color: #015249;
+    }
 
-.nav-menu-item{
-    text-align: center;   
-}
-
-.nav-menu-item:hover{
-    color: #015249;
-}
-
-.dropdown-menu{
-    /*border-radius: 10%;*/
-    background-color: #015249;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /*width: 100%;*/
-    border: #57bc90 solid 2px !important;
-}
+    .dropdown-menu{
+        /*border-radius: 10%;*/
+        background-color: #015249;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /*width: 100%;*/
+        border: #57bc90 solid 2px !important;
+    }
 
     .bottom-align {
         position: relative;
@@ -456,6 +552,7 @@ a:hover{
         text-align: left;
         margin-left: .3em;
     }
+
     .text-header{
         font-size: 3em;
     }
@@ -517,17 +614,19 @@ a:hover{
 @media only screen and (max-width : 480px) {
     .bottom-align {
         position: relative;
-        top: 110px;
+        top: 115px;
         left: 0px;
         text-align: left;
         margin-left: .5em;
     }
-
+    .values-align{
+        top: 120px !important;
+    }
     .text-header{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .tip-header{
-        font-size: .75em;
+        font-size: .65em;
         margin-left: .5em;
         padding-bottom: 10px;
     }
@@ -539,11 +638,21 @@ a:hover{
     .officer-name{
         font-size: .75em;
     }
+
+    .lpep-align{
+        top: 115px !important;
+    }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
-    
+    .values-align{
+        top: 90px !important;
+    }
+
+    .lpep-align{
+        top: 125px !important;
+    }
 }
 
 
